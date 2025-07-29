@@ -1,0 +1,43 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    direction: rtl;
+}
+
+.login-box, .dashboard {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
