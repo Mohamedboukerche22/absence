@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة الغيابات</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>لوحة الغيابات</h2>
+        <form method="post">
+            <input type="text" name="student" placeholder="اسم التلميذ" required>
+            <input type="date" name="date" required>
+            <input type="text" name="reason" placeholder="السبب" required>
+            <button type="submit">إضافة غياب</button>
+        </form>
+
+        <h3>قائمة الغيابات</h3>
+        <table>
+            <tr>
+                <th>اسم التلميذ</th>
+                <th>التاريخ</th>
+                <th>السبب</th>
+            </tr>
+            {% for ab in absences %}
+            <tr>
+                <td>{{ ab[1] }}</td>
+                <td>{{ ab[2] }}</td>
+                <td>{{ ab[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/logout">تسجيل الخروج</a>
+    </div>
+</body>
+</html>
